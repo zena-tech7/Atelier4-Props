@@ -1,23 +1,27 @@
 import logo from './logo.svg';
-import './App.css';
+import './styles.css';
+
+
+function CourseGoal(props) {
+  return (
+    <li>
+      <h2>{title = props.title}</h2>
+      <P>{size = props.description}</P>
+    </li>
+  );
+}
 
 function App() {
   return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
+    <div id="App">
+      <h1>"TIME TO PRACTICE"</h1>
+      <h3>One course, many goals! 🎯</h3>
+      <ul>
+        <CourseGoal
+          title={"Learn React"}
+          description={"In-depth"}
+        />
+      </ul>
     </div>
   );
 }
