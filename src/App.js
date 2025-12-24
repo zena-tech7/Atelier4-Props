@@ -6,7 +6,7 @@ function CourseGoal(props) {
   return (
     <li>
       <h2>{title = props.title}</h2>
-      <P>{size = props.description}</P>
+      <p>{size = props.description}</p>
     </li>
   );
 }
